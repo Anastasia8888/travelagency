@@ -1,0 +1,195 @@
+$color_white: #fff;
+$color_1: #ef5b5b;
+.topTours_section{
+	background: url(../images/search.png);
+	width: 100%;
+	height: 1351px;
+	background-size: cover;
+	padding-top: 140px;
+	h3{
+		color: $color_white;
+	}
+	.topCity_rating{
+		padding: 0px 15px 15px 15px;
+	}
+	hr{
+		background-color: #d6d6d6;
+	}
+	.slick-next, .slick-next:focus,.slick-next:hover{
+		background-image: url(../images/arrow_touched.svg);
+		width: 40px;
+		height: 40px;
+		right: 80px;
+		z-index: 1000;
+	} 
+	.slick-prev, .slick-prev:focus, .slick-prev:hover{
+		background-image: url(../images/arrow_notouched.svg);
+		width: 42px;
+		height: 42px;
+		left: 60px;
+		z-index: 1000;
+	}
+	.slick-next:before{
+		content: '';
+	}
+	.slick-prev:before{
+		content: '';
+	}
+	.slick-slide {
+		margin-left: 27px;
+	}
+	/* the parent */
+	.slick-list {
+		margin-left:-27px;
+	}
+}
+
+.slider{
+	margin-top: 75px;
+	width: 100%;
+	overflow: hidden;
+}
+.slider_item{
+	width: 370px;
+	height: 590px;
+	border-radius: 6px;
+	background-color: $color_white;
+	overflow: hidden;
+	margin-right: 30px;
+	.slider_item_img-transport{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		margin: 0 auto;
+		height: 30px;
+		width: 100px;
+		background-color: rgb(0, 177, 255);
+		text-transform: uppercase;
+		.fa_plane{
+			transform: rotate(-45deg);
+		}
+	}
+	&[aria-hidden="true"]{
+		filter: invert(0.4)  brightness(150%);
+	}
+	.slider_item_img{
+		width: 370px;
+		height: 370px;
+		background-size: cover;
+		border-radius: 6px 6px 0px 0px;
+	}
+	.slider_item_text{
+		width: 255px;
+		h3{
+			color: rgb(34, 34, 34);
+			font-size: 20px;
+			text-align: left;
+			padding-top: 10px;
+		}
+		p{
+			text-align: left;
+			line-height: 1.5;
+			margin-top: 10px;
+		}
+	}
+}
+.slider_item_content{
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+
+}
+.slider_item_price{
+	text-align: right;
+	.oldPrice{
+		color: $color_1;
+		font-size: 14px;
+		font-family: "Montserrat";
+		text-decoration: line-through;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.pinkStar{
+		font-size: 18px;
+		font-family: "Montserrat";
+		color: $color_1;
+		font-weight: bold;
+	}
+}
+.slider_item_date{
+	margin-top: 25px;
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: rgb(34, 34, 34);
+	font-weight: bold;
+}
+.searchTour {
+    margin-top: 150px;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+    *{
+	box-sizing: border-box;
+    }
+}
+.searchTour_form {
+    height: 100px;
+	border: 15px solid rgba(255, 255, 255, 0.5);
+	margin-top: 65px;
+	form {
+		position: relative;
+		margin: 0 auto;
+     }
+    input[ type="text"]{
+	  width: 285px;
+	  height: 70px;
+	  padding: 0px;
+	  color: #9E9C9C;
+	  padding-inline-start: 0px;
+	  position: absolute; 
+      top: 0;
+      left: 0;
+	}
+    input[ type="date"]{
+	  height: 70px;
+
+    }
+    .check_in{
+      position: absolute; 
+      top: 0;
+      left: 285px;
+      width: 270px;
+    	}
+    .check_out{
+    	width: 220px;
+    position: absolute; 
+      top: 0;
+      left: 555px;
+
+
+    }
+    select{
+  	width: 215px;
+  	height: 70px;
+  	position: absolute; 
+    top: 0;
+    right: 150px;
+  }
+	button {
+	  position: absolute; 
+	  top: 0;
+	  right: 0px;
+	  width: 150px;
+	  height: 70px;
+	  border: none;
+	  background: $color_1;
+	  cursor: pointer;
+	  font-size: 16px;
+	  color: $color_white;
+	  text-transform: uppercase;
+	}
+}
+@for $i from 1 through 5 {
+	.img_#{$i} { background-image: url(../images/search_#{$i}.png); }
+}
+

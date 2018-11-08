@@ -1,0 +1,156 @@
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/v4-shims.scss";
+@import "reset";
+@import "advantages_section";
+@import "topTours_section";
+@import "typography";
+@import "bestPlace";
+@charset "UTF-8";
+@import "feedback_section";
+@import "blog_section";
+@import "message_section";
+@import "footer";
+@import "fonts.scss";
+$color_white: #fff;
+$color_1: #ef5b5b;
+.first_section {
+  background: url("../images/firstScreen_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 980px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn_booking {
+  border-radius: 6px;
+  background-color: $color_1;
+  padding: 12px 32px;
+  border: none;
+  cursor: pointer;
+  @extend .btn_booking_text;
+}
+.menu{ 
+  ul {
+  display: flex;
+  }
+  .menu_link {
+  padding-right: 45px;
+  }
+
+}
+header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+
+  .logo_title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  }
+}
+.title {
+  margin-top: 220px;
+  .tittle_header {
+    text-align: left;
+    padding-bottom: 30px;
+    font-size: 28px;
+   }
+   .tittle_discount {
+    font-size: 41px;
+    padding-bottom:40px;
+    text-align: left;
+    }
+   .tittle_start {
+    padding-bottom: 45px;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+.agency_description{
+  .text_agency {
+    margin-top: 80px;
+    text-align: left;
+  }
+  .text_trip {
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 2px solid $color_1;
+    text-align: left;
+  }
+  .text_description {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+}
+.top{
+  display: inline-block;
+  overflow: hidden;
+  width: 1000px;
+  position: absolute;
+  top: 870px;
+  right: 0px;
+  .topCity {
+    height: 520px;
+    width: 370px ;
+    border-radius: 6px;
+    background-color: $color_white;
+    box-shadow: 0px 1px 1px 0px rgba(33, 30, 31, 0.2);
+    margin-right: 30px;
+    .topCity_header {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .topCity_img {
+      width: 370px;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    hr {
+      background-color: #d6d6d6;
+      width: 370px;
+      height: 2px;
+    
+    }
+  }
+}
+.topCity_rating {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      span {
+        font-size: 14px;
+        @extend p;
+        color: rgb(34, 34, 34);
+        font-weight: bold;
+        text-align: left;
+      }
+      .fa {
+      color: $color_1;
+      font-size: 12px;
+      }
+}
+.btn_discover {
+    @extend .btn_booking_text;
+    @extend .btn_booking;
+    padding: 7px 20px;
+    text-transform: none;
+}

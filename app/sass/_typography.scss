@@ -1,0 +1,68 @@
+$color_white: #fff;
+$color_1: #ef5b5b;
+h4{
+  font-size: 24px;
+  font-family: "Segoe Script";
+  color: $color_1;
+  text-align: center;
+}
+h3{
+  font-size: 28px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+h6{
+	  font-size: 24px;
+    font-family: "Montserrat";
+    color: #222222;
+    font-weight: bold;
+    text-align: center;
+}
+h5{
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(0, 177, 255);
+  font-weight: bold;
+}
+p{
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgb(128, 128, 128);
+  line-height: 1.75;
+}
+.btn_booking_text{
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color_white;
+}
+.logo_title_bold {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.logo_title_regular {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: #222222;
+  text-transform: uppercase;
+}
+.menu_link {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+.contacts_header{
+  font-size: 20px;
+  font-family: "Poppins";
+  color: rgb(34, 34, 34);
+  font-weight: 500;
+}

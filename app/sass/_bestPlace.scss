@@ -1,0 +1,89 @@
+.bestPlace_section{
+	.bestPlaces_header{
+		h4{
+			margin-top: 150px;
+		}
+		h3{
+			margin-top: 20px;
+		}
+		p{
+			margin-top: 40px;
+			text-align: center;
+		}
+    }
+    .bestPlaces{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 150px;
+		.bestPlaces_item{
+			padding-top: 80px;
+			height: 204px;
+			display: flex;
+			justify-content: flex-start;
+			text-align: left;
+		}
+		.bestPlaces_item_text{
+			padding-top: 20px;
+			padding-left: 25px;
+			.fa{
+				color: rgb(0, 177, 255);
+			}
+			h6{
+				text-align: left;
+			}
+			p{
+				margin-top: 25px;
+				text-align: left;
+			}
+
+		}
+		.bestPlaces_item_img{
+			border: 2px solid rgb(203, 203, 203);
+			width: 204px;
+			height: 204px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+	}
+	.container{
+		background-image: url(../images/best_tours_bg.png);
+		background-repeat: no-repeat;
+		height: 1285px;
+	}
+}
+.pluses_section{
+	height: 300px;
+	background-color: #ef5b5b;
+	.pluses{
+	    height: 300px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+	.pluses_item{
+		display: flex;
+		align-items: center;
+		.pluses_item_icon{
+
+			  padding-right: 20px;
+			  font-size: 50px;
+			  color: rgb(255, 200, 17);
+			  text-transform: uppercase;
+		}
+		h3{
+			  font-size: 48px;
+			  color: rgb(255, 255, 255);
+			  font-weight: bold;
+			  margin-top: 0px;
+		}
+		p{
+			font-size: 18px;
+			color: rgb(255, 255, 255);
+		}
+	}
+}
