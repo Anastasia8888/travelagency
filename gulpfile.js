@@ -32,7 +32,8 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		'app/libs/slick/slick.min.js' // Берем Magnific Popup
+		'app/libs/slick/slick.min.js',
+		'app/libs/wow/wow.min.js' 
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -43,7 +44,8 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 	    'app/css/libs.css',
 	    'app/libs/slick/slick-theme.css',
-	    'app/libs/slick/slick.css'
+	    'app/libs/slick/slick.css',
+	    'app/libs/wow/animate.css'
 	    ]) // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(concat('libs.min.css')) // Добавляем суффикс .min

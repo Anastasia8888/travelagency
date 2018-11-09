@@ -6782,6 +6782,7 @@ p, .subscribing_input input[placeholder], .message_text .btn_discover, .contacts
             justify-content: space-between; }
   .blog_section .blog_item {
     margin-top: 50px;
+    width: 550px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
