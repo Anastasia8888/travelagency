@@ -89,7 +89,7 @@ gulp.task('img', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))/**/)
-		.pipe(gulp.dest('dist/images/')); // Выгружаем на продакшен
+		.pipe(gulp.dest('distr/images/')); // Выгружаем на продакшен
 });
 
 gulp.task('build', ['clean', 'img','sass', 'scripts'], function() {
@@ -98,16 +98,16 @@ gulp.task('build', ['clean', 'img','sass', 'scripts'], function() {
 		'app/css/main_section.css',
 		'app/css/libs.min.css'
 		])
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('distr/css'))
 
 	var buildFonts = gulp.src('app/webfonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'))
+	.pipe(gulp.dest('distr/fonts'))
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('distr/js'))
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('distr'));
 
 });
 
