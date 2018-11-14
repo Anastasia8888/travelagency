@@ -9,6 +9,9 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+	pug          = require('gulp-pug'),   //подключаем pug- html шаблонизатор
+	htmlbeautify = require('gulp-html-beautify'), //подключаем библиотеку преобразования html файлов
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -39,7 +42,21 @@ gulp.task('scripts', function() {
 		.pipe(uglify()) // Сжимаем JS файл
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
-
+gulp.task('pug', function() {
+  return gulp.src('app/partials/index.pug')
+  .pipe(pug({
+  	pretty:true
+  }))
+  .pipe(gulp.dest("./app/"))
+});
+gulp.task('htmlbeautify', function() {
+  var options = {
+    indentSize: 2
+  };
+ return gulp.src('./*.html')
+    .pipe(htmlbeautify(options))
+    .pipe(gulp.dest('./app/'));
+});
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 	    'app/css/libs.css',
@@ -52,10 +69,11 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'pug','css-libs', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
+	gulp.watch('app/partials/**/*.pug', browserSync.reload);   // Наблюдение за pug файлами в папке partisla
 });
 
 gulp.task('clean', function() {
