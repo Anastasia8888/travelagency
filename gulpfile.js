@@ -77,7 +77,7 @@ gulp.task('watch', ['browser-sync', 'pug','css-libs', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-	return del.sync('dist'); // Удаляем папку dist перед сборкой
+	return del.sync('distr'); // Удаляем папку distr перед сборкой
 });
 
 gulp.task('img', function() {

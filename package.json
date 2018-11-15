@@ -4,7 +4,7 @@
   "description": "Travelagency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d distr"
   },
   "author": "Khaetskaya",
   "license": "ISC",
@@ -22,6 +22,10 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglifyjs": "^0.6.2",
+    "homepage": "https://anastasia8888.github.io/travelagency",
     "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
