@@ -4,257 +4,283 @@
     <meta charset="UTF-8">
     <title>Travel agency</title>
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main_section.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Poppins:400,600,700|Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,600,700|Poppins:400,600,700|Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
-    <div class="first_section">
+    <div class="header_section">
       <div class="container">
         <header>
           <div class="logo">
-            <div class="logo_img"><a href="index.html"><img src="images/logo.svg" alt="Logo"></a></div>
-            <div class="logo_title">
-              <div class="logo_title_bold"><span>Mocco Group</span></div>
-              <div class="logo_title_regular"><span>Travell Agency</span></div>
+            <div class="logo__img"><a href="index.html"><img src="images/logo.svg" alt="Logo"></a></div>
+            <div class="logo__title">
+              <div class="logo__title_bold"><span>Mocco Group</span></div>
+              <div class="logo__title_regular"><span>Travell Agency</span></div>
             </div>
           </div>
           <div class="menu">
             <ul>
-              <li><a class="menu_link" href="#">Home</a></li>
-              <li><a class="menu_link" href="#">About</a></li>
-              <li><a class="menu_link" href="#">Tour <i class="fa fa-sort-down" aria-hidden="true"></i></a></li>
-              <li><a class="menu_link" href="#">Hotels <i class="fa fa-sort-down" aria-hidden="true"></i></a></li>
-              <li><a class="menu_link" href="#">Blog</a></li>
-              <li><a class="menu_link" href="#">Contacts </a></li>
-              <li><a class="menu_link menu_link_search" href="#"><i class="fa fa-search"></i></a></li>
-              <li><a class="btn_booking" href="#">Book now</a></li>
+              <li><a class="menu__link" href="#">Home</a></li>
+              <li><a class="menu__link" href="#">About</a></li>
+              <li><a class="menu__link" href="#">Tour <i class="fa fa-sort-down" aria-hidden="true"></i></a></li>
+              <li><a class="menu__link" href="#">Hotels <i class="fa fa-sort-down" aria-hidden="true"></i></a></li>
+              <li><a class="menu__link" href="#">Blog</a></li>
+              <li><a class="menu__link" href="#">Contacts </a></li>
+              <li><a class="menu__link menu__link_search" href="#"><i class="fa fa-search"></i></a></li>
+              <li><a class="btn-booking" href="#">Book now</a></li>
             </ul>
           </div>
         </header>
         <div class="title">
-          <h4 class="tittle_header">World Best Travell Agency</h4>
-          <h3 class="tittle_discount">Save Upto 40% For Upcoming Summer</h3>
-          <h3 class="tittle_start">Starts From $250 Only   ( 2 Days, 3 Nights)</h3><a class="btn_booking" href="#">Explore Now<i class="fa fa-sort-down fa-rotate-270" aria-hidden="true"></i></a>
+          <h4 class="title__header">World Best Travell Agency</h4>
+          <h3 class="title__discount">Save Upto 40% For Upcoming Summer</h3>
+          <h3 class="title__start">Starts From $250 Only   ( 2 Days, 3 Nights)</h3><a class="btn-booking_big" href="#">Explore Now<i class="fa fa-sort-down fa-rotate-270" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
-    <div class="container agency_description">
-      <h4 class="text_agency">Our Agency</h4>
-      <h3 class="text_trip">Feature Trip</h3>
-      <p class="text_description">Accusamus et iusto odio bolo<br>      dignissimos ducimus qui lawer<br> blandits praesentium Accus<br> amus et iusto odio bolo atque<br>      volup tatum delenite.</p><a class="btn_booking" href="#">Book now</a>
+    <div class="container agency-description">
+      <h4 class="agency-description__header">Our Agency</h4>
+      <h3 class="agency-description__trip">Feature Trip</h3>
+      <p class="agency-description__text">Accusamus et iusto odio bolo<br>      dignissimos ducimus qui lawer<br> blandits praesentium Accus<br> amus et iusto odio bolo atque<br>      volup tatum delenite.</p><a class="btn-booking" href="#">Book now</a>
     </div>
-    <div class="top" dir="rtl">
-      <div class="topCity">
-        <div class="topCity_img"><img src="images/London.png" alt="London"></div>
-        <h3 class="topCity_header">London, England</h3>
+    <div class="top__slider" dir="rtl">
+      <div class="top__item">
+        <div class="top-item__img"><img src="images/London.png" alt="London"></div>
+        <h3 class="top-item__header">London, England</h3>
         <hr>
-        <div class="topCity_rating">
-          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half" aria-hidden="true"></i></div><a class="btn_discover" href="#">Discover</a>
+        <div class="top-item__rating" dir="ltr">
+          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half" aria-hidden="true"></i></div><a class="btn-discover" href="#">Discover</a>
         </div>
       </div>
-      <div class="topCity">
-        <div class="topCity_img"><img src="images/dubai.png" alt="Dubai"></div>
-        <h3 class="topCity_header">Dubai, UAE</h3>
+      <div class="top__item">
+        <div class="top-item__img"><img src="images/dubai.png" alt="Dubai"></div>
+        <h3 class="top-item__header">Dubai, UAE</h3>
         <hr>
-        <div class="topCity_rating">
-          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div><a class="btn_discover" href="#">Discover</a>
+        <div class="top-item__rating" dir="ltr">
+          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div><a class="btn-discover" href="#">Discover</a>
         </div>
       </div>
-      <div class="topCity">
-        <div class="topCity_img"><img src="images/bern.png" alt="Bern"></div>
-        <h3 class="topCity_header">Bern, Switzerland</h3>
+      <div class="top__item">
+        <div class="top-item__img"><img src="images/bern.png" alt="Bern"></div>
+        <h3 class="top-item__header">Bern, Switzerland</h3>
         <hr>
-        <div class="topCity_rating">
-          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half" aria-hidden="true"></i></div><a class="btn_discover" href="#">Discover</a>
+        <div class="top-item__rating" dir="ltr">
+          <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half" aria-hidden="true"></i></div><a class="btn-discover" href="#">Discover</a>
         </div>
       </div>
     </div>
     <div class="advantages_section">
       <div class="container">
-        <h4 class="carousel_header_text text_agency"><span>Provide Package</span></h4>
-        <h3 class="carousel_text_advantage"><span>Convenience</span></h3>
-        <div class="carousel wow bounceInUp" data-wow-offset="20" data-wow-duration="3s">
-          <div class="carousel_item">
-            <div class="carousel_item_image"><img src="images/Forma1.svg" alt="Hotel Facilities"></div>
-            <h6 class="carousel_item_header"><span>Hotel Facilities</span></h6>
-            <p class="carousel_item_text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
+        <h4 class="carousel__header"><span>Provide Package</span></h4>
+        <h3 class="carousel__text"><span>Convenience</span></h3>
+        <div class="carousel wow bounceInUp" data-wow-offset="20" data-wow-duration="2s">
+          <div class="carousel__item">
+            <div class="carousel-item__image"><img src="images/Forma1.svg" alt="Hotel Facilities"></div>
+            <h6 class="carousel-item__header"><span>Hotel Facilities</span></h6>
+            <p class="carousel-item__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
           </div>
-          <div class="carousel_item">
-            <div class="carousel_item_image"><img src="images/Forma2.svg" alt="Tourist Guide"></div>
-            <h6 class="carousel_item_header"><span>Tourist Guide</span></h6>
-            <p class="carousel_item_text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
+          <div class="carousel__item">
+            <div class="carousel-item__image"><img src="images/Forma2.svg" alt="Tourist Guide"></div>
+            <h6 class="carousel-item__header"><span>Tourist Guide</span></h6>
+            <p class="carousel-item__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
           </div>
-          <div class="carousel_item">
-            <div class="carousel_item_image"><img src="images/Forma3.svg" alt="Air Ticket"></div>
-            <h6 class="carousel_item_header"><span>Air Ticket</span></h6>
-            <p class="carousel_item_text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
+          <div class="carousel__item">
+            <div class="carousel-item__image"><img src="images/Forma3.svg" alt="Air Ticket"></div>
+            <h6 class="carousel-item__header"><span>Air Ticket</span></h6>
+            <p class="carousel-item__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
           </div>
-          <div class="carousel_item">
-            <div class="carousel_item_image"><img src="images/Forma3.svg" alt="Air Ticket"></div>
-            <h6 class="carousel_item_header"><span>Air Ticket</span></h6>
-            <p class="carousel_item_text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
+          <div class="carousel__item">
+            <div class="carousel-item__image"><img src="images/Forma3.svg" alt="Air Ticket"></div>
+            <h6 class="carousel-item__header"><span>Air Ticket</span></h6>
+            <p class="carousel-item__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible</p>
           </div>
         </div>
-        <h4 class="carousel_header_text text_agency">We Take Best Care</h4>
-        <h3 class="carousel_text_advantage">Why Choose Us?</h3>
-        <div class="advantages wow bounceInUp" data-wow-offset="20" data-wow-duration="3s">
-          <div class="advantage_item">
-            <h5 class="advantage_name">Unlimited Room Available.</h5>
-            <p class="advantage_text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+        <h4 class="carousel__header">We Take Best Care</h4>
+        <h3 class="carousel__text">Why Choose Us?</h3>
+        <div class="advantages">
+          <div class="advantage__item">
+            <h5 class="advantage-item__name">Unlimited Room Available.</h5>
+            <p class="advantage-item__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
           </div>
-          <div class="advantage_item">
-            <h5 class="advantage_name">Air / Bus Ticket Provide By Us.</h5>
-            <p class="advantage_text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+          <div class="advantage__item">
+            <h5 class="advantage-item__name">Air / Bus Ticket Provide By Us.</h5>
+            <p class="advantage-item__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
           </div>
         </div>
         <div class="advantages">
-          <div class="advantage_item">
-            <h5 class="advantage_name">Custome Packege Available.</h5>
-            <p class="advantage_text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+          <div class="advantage__item">
+            <h5 class="advantage-item__name">Custome Packege Available.</h5>
+            <p class="advantage-item__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
           </div>
-          <div class="advantage_item">
-            <h5 class="advantage_name">100% Safe and Luxury Journey.</h5>
-            <p class="advantage_text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+          <div class="advantage__item">
+            <h5 class="advantage-item__name">100% Safe and Luxury Journey.</h5>
+            <p class="advantage-item__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="topTours_section">
+    <div class="tours__section">
       <h4>Our Agency Provide</h4>
       <h3>Top Tour Packege</h3>
       <div class="slider">
-        <div class="slider_item">
-          <div class="slider_item_img img_1">
-            <div class="slider_item_img-transport"><span class="fa fa_plane"></span>By Air</div>
+        <div class="slider__item">
+          <div class="slider-item__img img_1">
+            <div class="slider-item__img_transport"><span class="fa fa_plane"></span>By Air</div>
           </div>
-          <div class="slider_item_content">
-            <div class="slider_item_text">
+          <div class="slider-item__content">
+            <div class="slider-item__text">
               <h3>Katmundu, Nepal</h3>
               <p>Accusamus et iustoAccusamus et iusto odio bolo odio bolodigti odio ball atque.</p>
             </div>
-            <div class="slider_item_price">
-              <div class="oldPrice">$454</div>
+            <div class="slider-item__price">
+              <div class="old-price">$454</div>
               <h5>$350</h5>
-              <div class="slider_item_date">
-                <div><span class="pinkStar">*</span>2 Day</div>
+              <div class="slider-item__date">
+                <div><span class="red-star">*</span>2 Day</div>
                 <div>3 Night</div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="topCity_rating">
+          <div class="top-item__rating">
             <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="topCity_reviews"><span>5+ Review</span></div><a class="btn_discover" href="#">Book Now</a>
+            <div class="top__reviews"><span>5+ Review</span></div><a class="btn-discover" href="#">Book Now</a>
           </div>
         </div>
-        <div class="slider_item">
-          <div class="slider_item_img img_2">
-            <div class="slider_item_img-transport"><span class="fa fa_plane"></span>By Air</div>
+        <div class="slider__item">
+          <div class="slider-item__img img_2">
+            <div class="slider-item__img_transport"><span class="fa fa_plane"></span>By Air</div>
           </div>
-          <div class="slider_item_content">
-            <div class="slider_item_text">
+          <div class="slider-item__content">
+            <div class="slider-item__text">
               <h3>Dubai, UAE</h3>
               <p>Accusamus et iustoAccusamus et iusto odio bolo odio bolodigti odio ball atque.</p>
             </div>
-            <div class="slider_item_price">
-              <div class="oldPrice">$800</div>
+            <div class="slider-item__price">
+              <div class="old-price">$800</div>
               <h5>$500</h5>
-              <div class="slider_item_date">
-                <div><span class="pinkStar">*</span>3 Day</div>
+              <div class="slider-item__date">
+                <div><span class="red-star">*</span>3 Day</div>
                 <div>4 Night</div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="topCity_rating">
+          <div class="top-item__rating">
             <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="topCity_reviews"><span>5+ Review</span></div><a class="btn_discover" href="#">Book Now</a>
+            <div class="top__reviews"><span>5+ Review</span></div><a class="btn-discover" href="#">Book Now</a>
           </div>
         </div>
-        <div class="slider_item">
-          <div class="slider_item_img img_3">
-            <div class="slider_item_img-transport"><span class="fa"> </span> By Road</div>
+        <div class="slider__item">
+          <div class="slider-item__img img_3">
+            <div class="slider-item__img_transport"><span class="fa"> </span> By Road</div>
           </div>
-          <div class="slider_item_content">
-            <div class="slider_item_text">
+          <div class="slider-item__content">
+            <div class="slider-item__text">
               <h3>Katmundu, Nepal</h3>
               <p>Accusamus et iustoAccusamus et iusto odio bolo odio bolodigti odio ball atque.</p>
             </div>
-            <div class="slider_item_price">
-              <div class="oldPrice">$800</div>
+            <div class="slider-item__price">
+              <div class="old-price">$800</div>
               <h5>$500</h5>
-              <div class="slider_item_date">
-                <div><span class="pinkStar">*</span>3 Day</div>
+              <div class="slider-item__date">
+                <div><span class="red-star">*</span>3 Day</div>
                 <div>4 Night</div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="topCity_rating">
+          <div class="top-item__rating">
             <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="topCity_reviews"><span>5+ Review</span></div><a class="btn_discover" href="#">Book Now</a>
+            <div class="top__reviews"><span>5+ Review</span></div><a class="btn-discover" href="#">Book Now</a>
           </div>
         </div>
-        <div class="slider_item">
-          <div class="slider_item_img img_4">
-            <div class="slider_item_img-transport"><span class="fa fa_plane"></span>By Air</div>
+        <div class="slider__item">
+          <div class="slider-item__img img_4">
+            <div class="slider-item__img_transport"><span class="fa fa_plane"></span>By Air</div>
           </div>
-          <div class="slider_item_content">
-            <div class="slider_item_text">
+          <div class="slider-item__content">
+            <div class="slider-item__text">
               <h3>Burn, Slovenia</h3>
               <p>Accusamus et iustoAccusamus et iusto odio bolo odio bolodigti odio ball atque.</p>
             </div>
-            <div class="slider_item_price">
-              <div class="oldPrice">$499</div>
+            <div class="slider-item__price">
+              <div class="old-price">$499</div>
               <h5>$400</h5>
-              <div class="slider_item_date">
-                <div><span class="pinkStar">*</span>2 Day</div>
+              <div class="slider-item__date">
+                <div><span class="red-star">*</span>2 Day</div>
                 <div>3 Night</div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="topCity_rating">
+          <div class="top-item__rating">
             <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="topCity_reviews"><span>5+ Review</span></div><a class="btn_discover" href="#">Book Now</a>
+            <div class="topCity__reviews"><span>5+ Review</span></div><a class="btn-discover" href="#">Book Now</a>
           </div>
         </div>
-        <div class="slider_item">
-          <div class="slider_item_img img_5">
-            <div class="slider_item_img-transport"><span class="fa fa_plane"></span>By Air</div>
+        <div class="slider__item">
+          <div class="slider-item__img img_5">
+            <div class="slider-item__img_transport"><span class="fa fa_plane"></span>By Air</div>
           </div>
-          <div class="slider_item_content">
-            <div class="slider_item_text">
+          <div class="slider-item__content">
+            <div class="slider-item__text">
               <h3>Katmundu, Nepal</h3>
               <p>Accusamus et iustoAccusamus et iusto odio bolo odio bolodigti odio ball atque.</p>
             </div>
-            <div class="slider_item_price">
-              <div class="oldPrice">$800</div>
+            <div class="slider-item__price">
+              <div class="old-price">$800</div>
               <h5>$500</h5>
-              <div class="slider_item_date">
-                <div><span class="pinkStar">*</span>3 Day</div>
+              <div class="slider-item__date">
+                <div><span class="red-star">*</span>3 Day</div>
                 <div>4 Night</div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="topCity_rating">
+          <div class="top-item__rating">
             <div><span>Rating :</span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="topCity_reviews"><span>5+ Review</span></div><a class="btn_discover" href="#">Book Now</a>
+            <div class="top__reviews"><span>5+ Review</span></div><a class="btn-discover" href="#">Book Now</a>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="searchTour">
+        <div class="searching">
           <h3>Custome PaCkege</h3>
-          <div class="searchTour_form">
+          <div class="searching__form">
             <form>
-              <input type="text" placeholder="Location">
-              <input class="check_in" type="date" name="trip" min="2018-01-01">
-              <input class="check_out" type="date" name="trip" min="2018-01-01">
-              <select name="people">
-                <option selected="">People</option>
+              <input class="searching-form__location" type="text" placeholder="Location">
+              <select class="searching-form__checkin" name="ckeckin">
+                <option selected="">&#xf271; Check In &#xf0dd;</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              <select class="searching-form__checkout" name="ckeckout">
+                <option selected="">&#xf272; Check Out &#xf0dd;</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              <select class="searching-form__people" name="people">
+                <option selected="">&#xf073; People &#xf0dd;</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -272,52 +298,52 @@
         </div>
       </div>
     </div>
-    <div class="bestPlace_section">
+    <div class="best-place__section">
       <div class="container">
-        <div class="bestPlaces_header">
+        <div class="places__header">
           <h4>Our Agency Provide Worldwide</h4>
           <h3>Best Tourist Place</h3>
           <p>Pleasure and praising pain was born and I will give you a complete account of the system,<br> human happiness no oncauwho do not know that.</p>
         </div>
-        <div class="bestPlaces wow bounceInUp" data-wow-offset="20" data-wow-duration="3s">
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_1.png" alt="Europe"></div>
-            <div class="bestPlaces_item_text">
+        <div class="places wow bounceInUp" data-wow-offset="10" data-wow-duration="2s">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_1.png" alt="Europe"></div>
+            <div class="places-item__text">
               <h6>Europe (12 Countries)</h6>
               <p><span class="fa"> </span>							Belgium. <span class="fa"> </span>   Germany. <span class="fa"> </span>   Spain. <br><span class="fa"> </span> Ireland. <span class="fa"> </span>   France.  <span class="fa"> </span> Iceland. <br><span class="fa"> </span>							Switzerland.  <span class="fa"> </span> Denmark.    <br><span class="fa"> </span>							Italy.  <span class="fa"> </span>  Netherlands. <span></span></p>
             </div>
           </div>
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_2.png" alt="Asia"></div>
-            <div class="bestPlaces_item_text">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_2.png" alt="Asia"></div>
+            <div class="places-item__text">
               <h6>Asia (10 Countries)</h6>
               <p><span class="fa"> </span>							Bsngladesh. <span class="fa"> </span> India.<span class="fa"> </span>   Singapore. <br><span class="fa"> </span>							Nepal.  <span class="fa"> </span>  Malaysia. <span class="fa"> </span>   Pakistan. <br><span class="fa"> </span>							Philippines. <span class="fa"> </span>   Myanmar. <span class="fa"> </span>   Indonesia. <br><span class="fa"> </span>							Timor-Leste. <span class="fa"> </span>   United Arab Emirates.</p>
             </div>
           </div>
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_3.png" alt="Australia"></div>
-            <div class="bestPlaces_item_text">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_3.png" alt="Australia"></div>
+            <div class="places-item__text">
               <h6>Australia (9 Countries)</h6>
               <p><span class="fa"> </span>							Australia. <span class="fa"> </span>   Cook Islands. <span class="fa"> </span>  Fiji. <br><span class="fa"> </span>							American Samoa. <span class="fa"> </span>  Howland Island. <br><span class="fa"> </span>							Nauru. <span class="fa"> </span>   Norfolk Island.  <span class="fa"> </span>  Croatia. <br>							Northern Mariana Islands.</p>
             </div>
           </div>
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_4.png" alt="Africa"></div>
-            <div class="bestPlaces_item_text">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_4.png" alt="Africa"></div>
+            <div class="places-item__text">
               <h6>Africa (12 Countries)</h6>
               <p><span class="fa"> </span>							Tunisia. <span class="fa"> </span>   Ghana. <span class="fa"> </span>   Uganda. <br><span class="fa"> </span>							Ivory Coast.<span class="fa"> </span>    Botswana.    Chad. <br><span class="fa"> </span>							Mauritius. <span class="fa"> </span>   Mauritania.    Swaziland. <br><span class="fa"> </span>							Gambia. <span class="fa"> </span>   Djibouti. <span class="fa"> </span>   Nigeria.</p>
             </div>
           </div>
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_5.png" alt="Namerica"></div>
-            <div class="bestPlaces_item_text">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_5.png" alt="Namerica"></div>
+            <div class="places-item__text">
               <h6>N. America (10 Countries)</h6>
               <p><span class="fa"> </span>							United States.   <span class="fa"> </span> Canada. <span class="fa"> </span>   Mexico. <br><span class="fa"> </span> Cuba.  <span class="fa"> </span>  Guatemala.  <span class="fa"> </span>  Panama. <br><span class="fa"> </span>  Nicaragua.  <span class="fa"> </span>  The Bahamas. <span class="fa"> </span>   Belize. <br><span class="fa"> </span>							Antigua and Barbuda.</p>
             </div>
           </div>
-          <div class="bestPlaces_item">
-            <div class="bestPlaces_item_img"><img src="images/bestTour_6.png" alt="Samerica"></div>
-            <div class="bestPlaces_item_text">
+          <div class="places__item">
+            <div class="places-item__img"><img src="images/bestTour_6.png" alt="Samerica"></div>
+            <div class="places-item__text">
               <h6>S. America (11 Countries)</h6>
               <p><span class="fa"> </span>							Argentina. <span class="fa"> </span> Chile.  <span class="fa"> </span>  Bolivia. <br><span class="fa"> </span>							Brazil.  <span class="fa"> </span>  Colombia.   <span class="fa"> </span> Costa Rica. <br><span class="fa"> </span>							Guatemala. <span class="fa"> </span>   Peru. <span class="fa"> </span>   Venezuela. <br><span class="fa"> </span>							Paraguay.  <span class="fa"> </span>  Uruguay.</p>
             </div>
@@ -325,88 +351,88 @@
         </div>
       </div>
     </div>
-    <div class="pluses_section">
+    <div class="pluses__section">
       <div class="container pluses">
-        <div class="pluses_item">
-          <div class="pluses_item_icon fa"></div>
-          <div class="pluses_item_text">
+        <div class="pluses__item">
+          <div class="pluses-item_icon fa"></div>
+          <div class="pluses-item_text">
             <h3>2580+</h3>
             <p>Happy Client</p>
           </div>
         </div>
-        <div class="pluses_item">
-          <div class="pluses_item_icon fa"></div>
-          <div class="pluses_item_text">
+        <div class="pluses__item">
+          <div class="pluses-item_icon fa"></div>
+          <div class="pluses-item_text">
             <h3>1880+</h3>
             <p>Online Member</p>
           </div>
         </div>
-        <div class="pluses_item">
-          <div class="pluses_item_icon fa"></div>
-          <div class="pluses_item_text">
+        <div class="pluses__item">
+          <div class="pluses-item_icon fa"></div>
+          <div class="pluses-item_text">
             <h3>2212+</h3>
             <p>Complete Tour</p>
           </div>
         </div>
-        <div class="pluses_item">
-          <div class="pluses_item_icon fa"></div>
-          <div class="pluses_item_text">
+        <div class="pluses__item">
+          <div class="pluses-item_icon fa"></div>
+          <div class="pluses-item_text">
             <h3>250+</h3>
             <p>Award Winning</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="feedback_section">
+    <div class="feedback__section">
       <div class="container">
-        <div class="videoTour"><img src="images/video_tour_play.svg" alt="Play"><span>Video Tour</span></div>
+        <div class="video-tour"><img src="images/video_tour_play.svg" alt="Play"><span>Video Tour</span></div>
         <div class="feedbacks">
           <h4>Tour Memorial Histroy</h4>
           <h3>Client Feedback</h3>
-          <div class="feedbacks_slider">
-            <div class="feedbacks_slider_item-photo">
-              <div class="feedbacks_slider_item-img person_1"></div>
+          <div class="feedbacks__slider">
+            <div class="feedbacks-slider__photo">
+              <div class="feedbacks-item__img person_1"></div>
             </div>
-            <div class="feedbacks_slider_item-photo">
-              <div class="feedbacks_slider_item-img person_2"></div>
+            <div class="feedbacks-slider__photo">
+              <div class="feedbacks-item__img person_2"></div>
             </div>
-            <div class="feedbacks_slider_item-photo">
-              <div class="feedbacks_slider_item-img person_3"></div>
+            <div class="feedbacks-slider__photo">
+              <div class="feedbacks-item__img person_3"></div>
             </div>
           </div>
-          <div class="feedbacks_slider_text">
-            <div class="slider_text_item">
+          <div class="feedbacks-slider__text">
+            <div class="feedbacks-item__text">
               <p class="fa fa_rewiew"></p>
               <p>Pleasure and praising pain was born and I will give you a <br>complete account of the system, human happiness Pleasure <br> and praising pain was born and I will give you a <br>complete account of the  no oncauwho do not know that.</p>
               <div class="author">
-                <div class="author_name">
+                <div class="author__name">
                   <h6>Dee C. Mendez</h6><span>Graphic Designer</span>
                 </div><img src="images/slash.svg" alt="/">
-                <div class="author_raiting">
+                <div class="author__raiting">
                   <h6>Personal Rating :</h6><span class="fa">     </span>
                 </div>
               </div>
             </div>
-            <div class="slider_text_item">
+            <div class="feedbacks-item__text">
               <p class="fa fa_rewiew"></p>
               <p>Pleasure and praising pain was born and I will give you a <br>complete account of the system, human happiness Pleasure <br> and praising pain was born and I will give you a <br>complete account of the  no oncauwho do not know that.</p>
               <div class="author">
-                <div class="author_name">
+                <div class="author__name">
                   <h6>Antony Mendez</h6><span>Programmer</span>
                 </div><img src="images/slash.svg" alt="/">
-                <div class="author_raiting">
+                <div class="author__raiting">
                   <h6>Personal Rating :</h6><span class="fa">     </span>
                 </div>
               </div>
             </div>
-            <div class="slider_text_item">
+            <div class="feedbacks-item__text">
               <p class="fa fa_rewiew"></p>
               <p>Pleasure and praising pain was born and I will give you a <br>complete account of the system, human happiness Pleasure <br> and praising pain was born and I will give you a <br>complete account of the  no oncauwho do not know that.</p>
               <div class="author">
-                <div class="author_name">
+                <div class="author__name">
                   <h6>Alice Scott</h6><span>HR Manager</span>
                 </div><img src="images/slash.svg" alt="/">
-                <div class="author_raiting">
+                <div class="author__raiting">
                   <h6>Personal Rating :</h6><span class="fa">     </span>
                 </div>
               </div>
@@ -415,91 +441,91 @@
         </div>
       </div>
     </div>
-    <div class="blog_section">
+    <div class="blog__section">
       <div class="container">
         <h4>Our Agency</h4>
         <h3>Latest Blog</h3>
-        <div class="blog wow bounceInUp" data-wow-offset="20" data-wow-duration="3s">
-          <div class="blog_item">
-            <div class="blog_item_img blog_item_img-1"></div>
-            <div class="blog_item_text">
+        <div class="blog wow bounceInUp" data-wow-offset="10" data-wow-duration="2s">
+          <div class="blog__item">
+            <div class="blog-item__img blog-item__img-1"></div>
+            <div class="blog-item__text">
               <h6>Always free from repetition.</h6>
               <p>Pleasure and praising pain was born will <br> give you a complete account of the <br> complete account of the .</p>
-              <div class="blog_item_text-date"><span class="fa"> </span>
+              <div class="blog-item__text_date"><span class="fa"> </span>
                 <p>25 Dec 18</p><span class="fa">  </span>
                 <p>4:15 PM</p>
               </div>
             </div>
           </div>
-          <div class="blog_item">
-            <div class="blog_item_img blog_item_img-2"></div>
-            <div class="blog_item_text">
+          <div class="blog__item">
+            <div class="blog-item__img blog-item__img-2"></div>
+            <div class="blog-item__text">
               <h6>Comes from a line in section.</h6>
               <p>Pleasure and praising pain was born will <br> give you a complete account of the <br> complete account of the .</p>
-              <div class="blog_item_text-date"><span class="fa"> </span>
+              <div class="blog-item__text_date"><span class="fa"> </span>
                 <p>22 Dec 18</p><span class="fa">  </span>
                 <p>10:15 PM</p>
               </div>
             </div>
           </div>
-          <div class="blog_item">
-            <div class="blog_item_img blog_item_img-3"></div>
-            <div class="blog_item_text">
+          <div class="blog__item">
+            <div class="blog-item__img blog-item__img-3"></div>
+            <div class="blog-item__text">
               <h6>Fugiat quo voluptas all pariatur?</h6>
               <p>Pleasure and praising pain was born will <br> give you a complete account of the <br> complete account of the .</p>
-              <div class="blog_item_text-date"><span class="fa"> </span>
+              <div class="blog-item__text_date"><span class="fa"> </span>
                 <p>21 Dec 18</p><span class="fa">  </span>
                 <p>12:00 PM</p>
               </div>
             </div>
           </div>
-          <div class="blog_item">
-            <div class="blog_item_img blog_item_img-4"></div>
-            <div class="blog_item_text">
+          <div class="blog__item">
+            <div class="blog-item__img blog-item__img-4"></div>
+            <div class="blog-item__text">
               <h6>Praesentium voluptatum deleniti</h6>
               <p>Pleasure and praising pain was born will <br> give you a complete account of the <br> complete account of the .</p>
-              <div class="blog_item_text-date"><span class="fa"> </span>
+              <div class="blog-item__text_date"><span class="fa"> </span>
                 <p>20 Dec 18</p><span class="fa">  </span>
                 <p>6:45 PM</p>
               </div>
             </div>
           </div>
         </div>
-        <button class="btn_booking">See All <span class="fa"></span></button>
+        <button class="btn-booking">See All <span class="fa"></span></button>
       </div>
     </div>
-    <div class="app wow bounceInUp" data-wow-offset="20" data-wow-duration="2s">
+    <div class="app">
       <div class="container">
-        <div class="app_download">
+        <div class="app__download">
           <h3>Download Our Offical Apps</h3>
           <p>Pleasure and praising pain was born and I will give you a complete <br> account of the system, human happiness Pleasure and praising pain <br> was born and I will give you an account know that</p>
-          <div class="app_buttons">
-            <button class="btn_booking"><i class="fab fa-android"></i> Available in <br>Play Store</button>
-            <button class="btn_booking"><i class="fab fa-apple"></i> Available in <br>APPLE ISo</button>
+          <div class="app__buttons">
+            <button class="btn-booking"><i class="fab fa-android"></i> Available in <br>Play Store</button>
+            <button class="btn-booking"><i class="fab fa-apple"></i> Available in <br>APPLE ISo</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="partners">
+    <div class="partners__section">
       <div class="container">
         <h4>Our Agency</h4>
         <h3>Branding Partner</h3>
-        <div class="partners_elements">
-          <div class="partners_item"><img src="images/partner_1.png" alt="Partner"></div>
-          <div class="partners_item"><img src="images/partner_2.png" alt="Partner"></div>
-          <div class="partners_item"><img src="images/partner_3.png" alt="Partner"></div>
-          <div class="partners_item"><img src="images/partner_4.png" alt="Partner"></div>
-          <div class="partners_item"><img src="images/partner_5.png" alt="Partner"></div>
+        <div class="partners">
+          <div class="partners__item"><img src="images/partner_1.png" alt="Partner"></div>
+          <div class="partners__item"><img src="images/partner_2.png" alt="Partner"></div>
+          <div class="partners__item"><img src="images/partner_3.png" alt="Partner"></div>
+          <div class="partners__item"><img src="images/partner_4.png" alt="Partner"></div>
+          <div class="partners__item"><img src="images/partner_5.png" alt="Partner"></div>
         </div>
       </div>
     </div>
     <div class="subscribing">
-      <div class="container subscribing_elements">
-        <div class="subscribing_text">
+      <div class="container subscribing__elements">
+        <div class="subscribing__text">
           <h3>Subscribe Our NewsLetter</h3>
           <p>Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you an account know that.</p>
         </div>
-        <div class="subscribing_input">
+        <div class="subscribing__input">
           <form>
             <input type="text" placeholder="Enter Email Address">
             <button type="submit"><i class="fa"></i></button>
@@ -507,43 +533,43 @@
         </div>
       </div>
     </div>
-    <div class="messsage_section">
+    <div class="messsage__section">
       <h4>We are ready to help you</h4>
       <h3>Your Message</h3>
       <div class="container">
-        <div class="message wow bounceInUp" data-wow-offset="20" data-wow-duration="3s">
-          <div class="message_autor">
+        <div class="message wow bounceInUp" data-wow-offset="10" data-wow-duration="2s">
+          <div class="message__author">
             <input type="text" placeholder="Your Full Name">
             <input type="text" placeholder="Address Here">
             <input type="text" placeholder="Email / Phone Number">
           </div>
-          <div class="message_text">
+          <div class="message__text">
             <textarea placeholder="Your Message"></textarea>
-            <input class="btn_discover" type="submit" value="Submitted">
+            <input class="btn-discover" type="submit" value="Submitted">
           </div>
         </div>
       </div>
     </div>
     <div class="contacts">
       <div class="container">
-        <div class="contacts_elements">
-          <div class="contacts_item-address">
+        <div class="contacts__elements">
+          <div class="contacts__address">
             <div class="logo">
-              <div class="logo_img"><a href="index.html"><img src="images/logo.svg" alt="Logo"></a></div>
-              <div class="logo_title">
-                <div class="logo_title_bold"><span>Mocco Group</span></div>
-                <div class="logo_title_regular"><span>Travell Agency</span></div>
+              <div class="logo__img"><a href="index.html"><img src="images/logo.svg" alt="Logo"></a></div>
+              <div class="logo__title">
+                <div class="logo__title_bold"><span>Mocco Group</span></div>
+                <div class="logo__title_regular"><span>Travell Agency</span></div>
               </div>
             </div>
             <p>Pleasure and praising pain was born and I will give you a <br> complete account of the system, human happiness <br> Pleasure and praising pain was born and I will give you an <br>account know that.</p>
-            <div class="contacts_telephone">
+            <div class="contacts__telephone">
               <p><span class="fa"> </span>+9685 4157-60</p>
               <p><span class="fa">   </span>419/ Summer Streen Los Angeles, CA 9001/</p>
             </div>
-            <p class="contacts_website">Other Website : <span>www.mocconet.com</span></p>
+            <p class="contacts__website">Other Website : <span>www.mocconet.com</span></p>
           </div>
-          <div class="contacts_item-links">
-            <p class="contacts_header">Useful links</p>
+          <div class="contacts__links">
+            <p class="contacts__header">Useful links</p>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
@@ -554,8 +580,8 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="contacts_item-sites">
-            <p class="contacts_header">Follow us</p>
+          <div class="contacts__sites">
+            <p class="contacts__header">Follow us</p>
             <ul>
               <li><a href="#"><span class="fab"></span>Facebook</a></li>
               <li><a href="#"><span class="fab"></span>Twitter</a></li>
@@ -566,11 +592,11 @@
               <li><a href="#"><span class="fab"></span>Pinterest</a></li>
             </ul>
           </div>
-          <div class="contacts_item-insta">
-            <div class="contacts_image">
-              <p class="contacts_header">Instagram</p><img src="images/insta1.png" alt="instagram"><img src="images/insta2.png" alt="instagram"><img src="images/insta3.png" alt="instagram"><br><img src="images/insta4.png" alt="instagram"><img src="images/insta5.png" alt="instagram"><img src="images/insta6.png" alt="instagram">
+          <div class="contacts__insta">
+            <div class="contacts__image">
+              <p class="contacts__header">Instagram</p><img src="images/insta1.png" alt="instagram"><img src="images/insta2.png" alt="instagram"><img src="images/insta3.png" alt="instagram"><br><img src="images/insta4.png" alt="instagram"><img src="images/insta5.png" alt="instagram"><img src="images/insta6.png" alt="instagram">
             </div>
-            <div class="contacts_search">
+            <div class="contacts__search">
               <form>
                 <input type="search" placeholder="Quick Search">
                 <button type="submit"><span class="fa"></span></button>
