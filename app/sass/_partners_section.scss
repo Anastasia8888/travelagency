@@ -1,0 +1,16 @@
+.partners__section{
+	padding-top: 200px;
+	background-image: url(../images/partners_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	h3{
+		color:#fff;
+	}
+}
+.partners{
+	margin-top: 80px;
+	padding-bottom: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

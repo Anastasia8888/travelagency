@@ -9,9 +9,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
-	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	pug          = require('gulp-pug'),   //подключаем pug- html шаблонизатор
-	htmlbeautify = require('gulp-html-beautify'), //подключаем библиотеку преобразования html файлов
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -49,14 +47,6 @@ gulp.task('pug', function() {
   }))
   .pipe(gulp.dest("./app/"))
 });
-gulp.task('htmlbeautify', function() {
-  var options = {
-    indentSize: 2
-  };
- return gulp.src('./*.html')
-    .pipe(htmlbeautify(options))
-    .pipe(gulp.dest('./app/'));
-});
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 	    'app/css/libs.css',
@@ -77,7 +67,7 @@ gulp.task('watch', ['browser-sync', 'pug','css-libs', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-	return del.sync('distr'); // Удаляем папку distr перед сборкой
+	return del.sync('dist'); // Удаляем папку distr перед сборкой
 });
 
 gulp.task('img', function() {
@@ -89,25 +79,27 @@ gulp.task('img', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))/**/)
-		.pipe(gulp.dest('distr/images/')); // Выгружаем на продакшен
+		.pipe(gulp.dest('dist/images/')); // Выгружаем на продакшен
 });
 
 gulp.task('build', ['clean', 'img','sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/css/main_section.css',
+		'app/css/reset.css',
+		'app/css/fonts.css',
+		'app/css/style.css',
 		'app/css/libs.min.css'
 		])
-	.pipe(gulp.dest('distr/css'))
+	.pipe(gulp.dest('dist/css'))
 
 	var buildFonts = gulp.src('app/webfonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('distr/fonts'))
+	.pipe(gulp.dest('dist/webfonts'))
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('distr/js'))
+	.pipe(gulp.dest('dist/js'))
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('distr'));
+	.pipe(gulp.dest('dist'));
 
 });
 

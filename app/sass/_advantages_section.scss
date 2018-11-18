@@ -1,79 +1,78 @@
 $color_white: #fff;
 $color_1: #ef5b5b;
 .advantages_section {
-  background-color: #f0efef;
+  margin-top: 190px;  
   padding-top: 140px;
   padding-bottom: 150px;
-  margin-top: 190px;
-  .carousel {
-    padding-bottom: 150px;
-    padding-top: 70px;
-  }
-     /* the slides */
+  background-color: #f0efef;
+  /* the slides */
   .slick-slide {
     margin-left: 27px;
   }
-
   /* the parent */
   .slick-list {
     margin-left:-27px;
   }
-  .slick-next, .slick-next:focus,.slick-next:hover{
-  background-image: url(../images/arrow_right.svg);
-  width: 28px;
-  height: 28px;
-  right: -60px;
- } 
- .slick-prev, .slick-prev:focus, .slick-prev:hover{
-   background-image: url(../images/arrow_left.svg);
+  .slick-next, .slick-next:focus,.slick-next:hover{  
+    right: -60px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/arrow_right.svg);
+  } 
+  .slick-prev, .slick-prev:focus, .slick-prev:hover{
+   left: -60px;
    width: 29px;
    height: 29px;
-   left: -60px;
+   background-image: url(../images/arrow_left.svg);
  }
  .slick-next:before{
-    content: '';
+   content: '';
  }
  .slick-prev:before{
-  content: '';
+   content: '';
  }
 
 }
-.carousel_item {
-  padding: 60px 20px;
-  border: 1px solid #cbcbcb;
-  background-color: $color_white;
+.carousel {
+  padding-bottom: 150px;
+  padding-top: 70px;
+}
+.carousel__item {
+  padding: 60px 20px;  
   max-width: 370px;
   max-height: 340px;
+  border: 1px solid #cbcbcb;
+  background-color: $color_white;
   img{
     margin: 0 auto;
   }
-  .carousel_item_header {
-    padding-top: 25px;
-    padding-bottom: 20px;
-  }
-  .carousel_item_text {
-   text-align: center;
+}
+.carousel-item__header {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.carousel-item__text {
+ text-align: center;
 
- }
 }
 .advantages {
   margin-top: 75px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  .advantage_item {
-    background-color: $color_white;
-    box-shadow: 0px 1px 1px 0px rgba(33, 30, 31, 0.15);
-    width: 510px;
-    height: 167px;
-    padding: 30px 30px;
-  }
-  .advantage_name {
-    line-height: 1.083;
-    text-align: left;
-    padding-bottom: 25px;
-  }
-  .advantage_text {
-    text-align: left;
 }
+.advantage__item {
+  padding: 30px 30px; 
+  width: 510px;
+  height: 167px;   
+  background-color: $color_white;
+  box-shadow: 0px 1px 1px 0px rgba(33, 30, 31, 0.15);
+}
+.advantage-item__name {    
+  padding-bottom: 25px;
+  text-align: left;
+  line-height: 1.083;
+}
+.advantage-item__text {
+  text-align: left;
 }

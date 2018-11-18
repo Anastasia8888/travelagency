@@ -1,107 +1,14 @@
-.contacts{
-	background-color: #f0efef;
-}
-.contacts_elements{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	.logo{
-		margin-bottom: 20px;
-	}
-	.contacts_header{
-		padding-bottom: 30px;
-		font-weight: 600;
-		
-	}
-}
-.contacts_telephone{ 
-	margin-top: 40px;
-	p{
-	  color: rgb(34, 34, 34);
-	  text-transform: uppercase;
-	}
-}
-.contacts_website {
-	color: rgb(34, 34, 34);
-	span{
-		color: #ef5b5b;
-	}
-}
-.contacts_item-links {
-	li,a{
-		text-transform: uppercase;
-		padding-bottom: 18px;
-		font-size: 16px;
-		font-family: "Poppins";
-		color: rgb(34, 34, 34);
-		font-weight: 500;
-
-
-	}
-
-}
-.contacts_item-sites{
-	li,a{
-		padding-bottom: 18px;
-		font-size: 16px;
-		font-family: "Poppins";
-		color: rgb(34, 34, 34);
-	}
-	.fab{
-		color: #00b1ff;
-		padding-right: 10px;
-	}
-}
-.contacts_item-insta{
-	.contacts_image{
-		float: right;
-		margin-bottom: 55px;
-	}
-}
-.contacts_search {
-	form{
-		display: flex;
-		width: 200px;
-	    box-shadow: 1px 1px 1px rgba(33, 30, 31, 0.2);
-	}
-	button{
-		background-color: #00b1ff;
-		color: #fff;
-		border: none;
-		height: 35px;
-		border-radius: 0px 6px 6px 0px;
-		width: 30px;
-
-	}
-
-	input[type='search']{
-		height: 35px;
-		border-radius: 6px 0px  0px 6px;
-		background-color: #ffffff;
-		border:none;
-		width: 170px;
-		&[placeholder]{
-			@extend p;
-			font-size: 14px;
-			padding-left: 15px;
-		}
-		
-
-	}
-}
 footer{
-	height: 50px;
-	background-color: #00b1ff;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;	
+	height: 50px;
+	background-color: #00b1ff;
 	span{
-		color: #edebeb;
 		font-size: 16px;
 		font-family: "Myriad Pro";
 		font-weight: 400;
+		color: #edebeb;
 		
 	}
 }

@@ -1,0 +1,88 @@
+.contacts{
+	background-color: #f0efef;
+}
+.contacts__elements{	
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	.logo{
+		margin-bottom: 20px;
+	}
+}
+.contacts__header{
+	padding-bottom: 30px;
+	font-weight: 600;
+
+}
+.contacts__telephone{ 
+	margin-top: 40px;
+	p{
+		color: rgb(34, 34, 34);
+		text-transform: uppercase;
+	}
+}
+.contacts__website {
+	color: rgb(34, 34, 34);
+	span{
+		color: #ef5b5b;
+	}
+}
+.contacts__links {
+	li,a{
+		padding-bottom: 18px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: "Poppins";
+		font-weight: 500;
+		color: rgb(34, 34, 34);
+	}
+
+}
+.contacts__sites{
+	li,a{
+		padding-bottom: 18px;
+		font-size: 16px;
+		font-family: "Poppins";
+		color: rgb(34, 34, 34);
+	}
+	.fab{
+		padding-right: 10px;
+		color: #00b1ff;
+	}
+}
+.contacts__insta{
+	.contacts__image{
+		margin-bottom: 55px;
+		float: right;
+	}
+}
+.contacts__search {
+	form{
+		display: flex;
+		width: 200px;
+		box-shadow: 1px 1px 1px rgba(33, 30, 31, 0.2);
+	}
+	button{
+		height: 35px;
+		width: 30px;
+		border-radius: 0px 6px 6px 0px;
+		border: none;
+		background-color: #00b1ff;
+		color: #fff;
+	}
+
+	input[type='search']{
+		height: 35px;
+		width: 170px;
+		border-radius: 6px 0px  0px 6px;
+		background-color: #ffffff;
+		border:none;
+		&[placeholder]{
+			padding-left: 15px;
+			font-size: 14px;
+			@extend p;
+		}
+	}
+}

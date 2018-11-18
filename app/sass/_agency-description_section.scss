@@ -1,0 +1,74 @@
+.agency-description__header {
+  margin-top: 80px;
+  text-align: left;
+}
+.agency-description__trip{
+  margin-top: 15px;
+  padding-left: 10px;
+  border-left: 2px solid $color_1;
+  text-align: left;
+}
+.agency-description__text {
+  margin-top: 30px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+.top__slider{  
+  position: absolute;
+  top: 870px;
+  right: 0px;
+  display: inline-block;
+  overflow: hidden;
+  width: 1000px;
+}
+.top__item{  
+  margin-bottom: 10px;
+  margin-right: 30px;
+  height: 520px;
+  width: 370px ;
+  border-radius: 6px;
+  background-color: $color_white;
+  box-shadow: 0px 3px 3px 0px rgba(33, 30, 31, 0.2);
+  hr {    
+    width: 370px;
+    height: 2px;
+    border: none;
+    background-color: #d6d6d6;
+  }
+}
+.top-item__header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+.top-item__img{  
+  margin-right: auto;
+  margin-left: auto;
+  width: 370px;
+  height: 400px;
+}
+.top-item__rating {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  span {   
+    padding-right: 10px;  
+    text-align: left;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    font-weight: bold;
+    @extend p;  
+  }
+  .fa {
+    color: $color_1;
+    font-size: 12px;
+  }
+}
+.btn-discover {
+  padding: 7px 20px;
+  text-transform: none;  
+  @extend .btn-booking__text;
+  @extend .btn-booking;
+}

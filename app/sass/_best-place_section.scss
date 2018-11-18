@@ -1,0 +1,57 @@
+.best-place__section{
+	.container{
+		background-image: url(../images/best_tours_bg.png);
+		background-repeat: no-repeat;
+		height: 1285px;
+	}
+}
+.places__header{
+	h4{
+		margin-top: 150px;
+	}
+	h3{
+		margin-top: 20px;
+	}
+	p{
+		margin-top: 40px;
+		text-align: center;
+	}
+}
+.places{
+	margin-top: 10px;
+	margin-bottom: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.places__item{
+	padding-top: 80px;
+	display: flex;
+	justify-content: flex-start;
+	text-align: left;
+	height: 204px;
+}
+.places-item__text{
+	padding-top: 20px;
+	padding-left: 25px;
+	.fa{
+		color: rgb(0, 177, 255);
+	}
+	h6{
+		text-align: left;
+	}
+	p{
+		margin-top: 25px;
+		text-align: left;
+	}
+
+}
+.places-item__img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 204px;
+	height: 204px;
+	border: 2px solid rgb(203, 203, 203);
+}

@@ -1,0 +1,32 @@
+.app{
+	margin-top: 210px;
+	height: 600px;
+	background-image: url(../images/hand-template.png);
+	background-repeat: no-repeat;
+	background-position-x: 15%;
+}
+.app__download{
+	padding-top: 200px;
+	float: right;
+	h3{
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.fa-android, .fa-apple{
+		padding-right: 10px;
+		font-size: 28px;
+	}
+}
+.app__buttons{
+	margin-top: 45px;
+	display: flex;
+	button{
+		margin-right: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		span{
+			text-transform: none;
+		}
+	}
+}

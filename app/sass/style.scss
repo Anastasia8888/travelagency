@@ -1,0 +1,24 @@
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/v4-shims.scss";
+@import "typography";
+@import "header_section";
+@import "agency-description_section";
+@import "advantages_section";
+@import "top-tours_section";
+@import "best-place_section";
+@import "pluses_section";
+@import "feedback_section";
+@import "blog_section";
+@import "app_section";
+@import "partners_section";
+@import "message_section";
+@import "contacts_section";
+@import "footer";
+.container {  
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}

@@ -4,7 +4,7 @@
   "description": "Travelagency",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d distr"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Khaetskaya",
   "license": "ISC",

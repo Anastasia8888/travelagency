@@ -1,69 +1,70 @@
 $color_white: #fff;
 $color_1: #ef5b5b;
-h4{
+h4 {
+  text-align: center;
+  color: $color_1;
   font-size: 24px;
   font-family: "Segoe Script";
-  color: $color_1;
-  text-align: center;
 }
-h3{
+h3 {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(34, 34, 34);
   font-size: 28px;
   font-family: "Montserrat";
-  color: rgb(34, 34, 34);
+  font-weight: bold;  
+}
+h6 {
+  text-align: center;  
+  color: #222222;
+	font-size: 24px;
+  font-family: "Montserrat";
   font-weight: bold;
-  text-align: center;
-  margin-top: 15px;
 }
-h6{
-	  font-size: 24px;
-    font-family: "Montserrat";
-    color: #222222;
-    font-weight: bold;
-    text-align: center;
-}
-h5{
+h5 {
+  color: rgb(0, 177, 255);
   font-size: 24px;
   font-family: "Montserrat";
-  color: rgb(0, 177, 255);
   font-weight: bold;
 }
-p{
+p {  
+  color: rgb(128, 128, 128);
   font-size: 16px;
   font-family: "Poppins";
-  color: rgb(128, 128, 128);
+
   line-height: 1.75;
   font-weight: 500;
 }
-.btn_booking_text{
+.btn-booking__text {  
+  color: $color_white;
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: bold;
   text-transform: uppercase;
-  color: $color_white;
 }
-.logo_title_bold {
+.logo__title_bold {  
+  color: #222222;
   font-size: 16px;
   font-family: "Open Sans";
-  color: #222222;
   font-weight: bold;
   text-transform: uppercase;
 }
-.logo_title_regular {
+.logo__title_regular {
+  color: #222222;
   font-size: 13px;
   font-family: "Open Sans";
-  color: #222222;
   text-transform: uppercase;
 }
-.menu_link {
+.menu__link {
+  color: rgb(34, 34, 34);
   font-size: 14px;
   font-family: "Montserrat";
-  color: #222222;
   font-weight: bold;
   text-transform: uppercase;
   }
-.contacts_header{
+.contacts__header {  
+  color: rgb(34, 34, 34);
   font-size: 20px;
   font-family: "Poppins";
-  color: rgb(34, 34, 34);
   font-weight: 500;
 }
